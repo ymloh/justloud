@@ -27,6 +27,7 @@ body {
   background-attachment: fixed;
   height: 100vh;
   padding: 0 2em;
+  /* overflow: hidden; */
 }
 
 .background-bw {
@@ -105,7 +106,7 @@ section {
   font-family: 'Odibee Sans', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 2em;
   position: absolute;
-  top: -150vh;
+  top: -2000px;
   transition: all 0.5s;
   padding: 3rem 50px;
   /* padding-top: 3rem; */
