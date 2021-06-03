@@ -20,7 +20,7 @@ html {
 /* background source credit: https://unsplash.com/photos/ZhQCZjr9fHo */
 
 body {
-  background-image: url('../images/background.png');
+  background-image: url('../images/background.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -31,7 +31,7 @@ body {
 
 .background-bw {
   /* border: 2px solid red; */
-  background-image: url('../images/background-bw.png');
+  background-image: url('../images/background-bw.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
