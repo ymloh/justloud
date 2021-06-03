@@ -20,7 +20,7 @@ html {
 /* background source credit: https://unsplash.com/photos/ZhQCZjr9fHo */
 
 body {
-  background-image: url('../images/background.jpg');
+  background-image: url('../images/background-bw.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -32,7 +32,7 @@ body {
 
 .background-bw {
   /* border: 2px solid red; */
-  background-image: url('../images/background-bw.jpg');
+  background-image: url('../images/background.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -64,6 +64,7 @@ main {
 
 .navbar-backing {
   background-color: rgba(255, 255, 255, 0.75);
+  z-index: 999;
 }
 
 .navlist {
@@ -74,15 +75,15 @@ main {
 .navitem {
   display: inline;
   padding: 0.2em 1em;
-  font-family: 'Odibee Sans', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: 1.5em;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1rem;
   font-weight: bold;
   border: 1px solid rgba(0, 0, 0, 0);
   transition: all 0.3s;
   text-transform: uppercase;
 }
 
-.navitem a {
+.navbar a {
   color: inherit;
   text-decoration: none;
   transition: all 0.2s;
@@ -110,7 +111,7 @@ section {
   transition: all 0.5s;
   padding: 3rem 50px;
   /* padding-top: 3rem; */
-  opacity: 0;
+  /* opacity: 0; */
 }
 
 section.display {
@@ -278,4 +279,6 @@ section h1 {
 
 .section-about-us img {
   width: 100%;
+  height: 100%;
+  /* object-fit: cover; */
 }
