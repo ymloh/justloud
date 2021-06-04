@@ -1,7 +1,4 @@
-window.addEventListener("load", () => {
-});
-
-window.addEventListener("hashchange", (evt) => {
+const sectionLoader = (evt) => {
   const navitems = document.getElementsByClassName('navitem');
   const sections = document.getElementsByTagName('section');
 
@@ -18,5 +15,9 @@ window.addEventListener("hashchange", (evt) => {
 
   document.getElementById(section_id).classList.add('display');
   console.log(`section_id: ${section_id}`);
+};
 
-});
+
+window.addEventListener("load", sectionLoader);
+
+window.addEventListener("hashchange", sectionLoader);
