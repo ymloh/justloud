@@ -20,7 +20,7 @@ html {
 /* background source credit: https://unsplash.com/photos/ZhQCZjr9fHo */
 
 body {
-  background-image: url('../images/background-bw.jpg');
+  background-image: url('../images/background-hall-bw.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -32,7 +32,7 @@ body {
 
 .background-bw {
   /* border: 2px solid red; */
-  background-image: url('../images/background.jpg');
+  background-image: url('../images/background-hall.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -43,6 +43,7 @@ body {
 
 main {
   width: 100%;
+  position: relative;
 }
 
 @media only screen and (min-width: 1197px) {
@@ -65,14 +66,16 @@ main {
 .navbar-backing {
   background-color: rgba(255, 255, 255, 0.75);
   z-index: 999;
+  position: relative;
 }
 
-.navlist {
+.navlinks {
   display: inline;
-  margin-bottom: 15px;
+  margin-bottom: 1.25em;
 }
 
-.navitem {
+.navlist li,
+.navlist-vert li {
   display: inline;
   padding: 0.2em 1em;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -81,6 +84,27 @@ main {
   border: 1px solid rgba(0, 0, 0, 0);
   transition: all 0.3s;
   text-transform: uppercase;
+}
+
+.navlist-vert li {
+  display: block;
+}
+
+.navlist-vert {
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  position: absolute;
+  z-index: 999;
+  visibility: hidden;
+  transition: all 0.1s;
+  right: -200px;
+  opacity: 0;
+}
+
+.navlist-vert.show {
+  visibility: visible;
+  opacity: 1;
+  right: 0;
 }
 
 .navbar a {
@@ -94,6 +118,30 @@ main {
   color: white;
   /* border: 1px solid rgba(255, 255, 255, 100); */
   text-shadow: 0 0 5px black;
+}
+
+.hamburger {
+  display: none;
+}
+
+@media only screen and (max-width: 1150px) {
+  .hamburger {
+    display: inline;
+    margin: 0.75em;
+  }
+
+  .hamburger:hover {
+    color: white;
+    filter: drop-shadow(0 0 5px black);
+  }
+
+  /* .bi {
+    box-shadow: 0 0 5px red;
+  } */
+
+  .navlinks {
+    display: none;
+  }
 }
 
 .highlight {
