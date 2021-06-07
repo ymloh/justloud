@@ -59,7 +59,7 @@ main {
 
 .navbar {
   /* background: center left / 50% url('../images/Alpha logo 3.png') no-repeat; */
-  background: 50px center / 25em url('../images/logo\ short.png') no-repeat;
+  background: 50px center / auto 4em url('../images/logo\ short.png') no-repeat;
   width: 100%;
   height: 100px;
   display: flex;
@@ -253,6 +253,19 @@ section h1 {
   .section-what-we-do .container {
     grid-template: 1fr 1fr / 1fr 1fr;
   }  
+}
+
+@media screen and (max-width: 576px) {
+  .section-what-we-do .container {
+    grid-template: 1fr / 1fr;
+  }
+
+  .navbar {
+    /* background: center left / 50% url('../images/Alpha logo 3.png') no-repeat; */
+    /* background: 50px center / 25em url('../images/logo\ minimal.png') no-repeat; */
+    /* background: 50px center / 25em url('../images/logo\ short.png') no-repeat; */
+    background: 50px center / auto 4em url('../images/logo\ minimal.png') no-repeat;
+  }
 }
 
 .section-what-we-do .thumbnail-pic img {
