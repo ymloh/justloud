@@ -20,14 +20,18 @@ html {
 /* background source credit: https://unsplash.com/photos/ZhQCZjr9fHo */
 
 body {
+  height: 100vh;
+  padding: 0 2em;
+  /* overflow: hidden; */
+}
+
+.background {
   background-image: url('../images/background-hall-bw.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  height: 100vh;
-  padding: 0 2em;
-  /* overflow: hidden; */
+  background-clip: border-box;
 }
 
 .background-bw {
@@ -104,7 +108,8 @@ main {
 .navlist-vert.show {
   visibility: visible;
   opacity: 1;
-  right: 0;
+  right: 1rem;
+  top: 1rem;
 }
 
 .navbar a {
